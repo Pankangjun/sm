@@ -26,7 +26,7 @@ extern "C" {
 #endif
 
 #ifndef offsetof
-#define offsetof(type, member) ((unsigned int) &((type *)0)->member)
+#define offsetof(type, member) ((unsigned long) &((type *)0)->member)
 #endif
 
 #ifndef container_of
